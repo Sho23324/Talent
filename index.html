@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day_1</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f00;
+            color: white;
+            text-align: center;
+        }
+        header a {
+            color: white;
+        }
+        footer {
+            background-color: green;
+            color: white;
+            text-align: center;
+        }
+        .content {
+            width: 80%;
+            background-color: yellowgreen;
+        }
+        aside {
+            width: 20%;
+            background-color: blue;
+        }
+        .flex {
+            display: flex;
+        }
+        .cardBox {
+            background-color: white;
+            border: 1px solid #000;
+            color: #f00;
+            padding: 8px;
+        }
+        .btn {
+            background-color: #f00;
+            padding: 5px 10px;
+            display: inline-block;
+            min-width: 160px;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+        }
+        .main-card {
+            flex-wrap: wrap;
+            gap: 24px 4px;
+            justify-content: space-between;
+        }
+        .main-card .cardBox {
+            width: calc(calc(100% /2 - 4px)); 
+        }
+    </style>
+</head>
+<body>    
+    <header>
+        <h1>Header</h1>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Content</a>
+    </header>
+    <main class="flex">
+        <div class="content">
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum dicta vel quos incidunt officiis, aspernatur saepe soluta recusandae natus. Aliquam rem maiores dolorem ratione praesentium nam corrupti omnis harum voluptas?</p>
+            <div class="flex main-card">
+                <div class="cardBox">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam a illo fugit, perferendis minima non, fuga ex repellat rerum similique aliquam suscipit quod porro dolor ea laboriosam numquam veniam? Possimus?</p>
+                    <a href="https://www.google.com" class="btn" target="_blank">Read more</a>
+                </div>
+                      
+                <div class="cardBox">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam a illo fugit, perferendis minima non, fuga ex repellat rerum similique aliquam suscipit quod porro dolor ea laboriosam numquam veniam? Possimus?</p>
+                    <a href="https://www.google.com" class="btn" target="_blank">Read more</a>
+                </div>
+                      
+                <div class="cardBox">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam a illo fugit, perferendis minima non, fuga ex repellat rerum similique aliquam suscipit quod porro dolor ea laboriosam numquam veniam? Possimus?</p>
+                    <a href="https://www.google.com" class="btn" target="_blank">Read more</a>
+                </div>
+                      
+                <div class="cardBox">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam a illo fugit, perferendis minima non, fuga ex repellat rerum similique aliquam suscipit quod porro dolor ea laboriosam numquam veniam? Possimus?</p>
+                    <a href="https://www.google.com" class="btn" target="_blank">Read more</a>
+                </div>
+                      
+                <div class="cardBox">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam a illo fugit, perferendis minima non, fuga ex repellat rerum similique aliquam suscipit quod porro dolor ea laboriosam numquam veniam? Possimus?</p>
+                    <a href="https://www.google.com" class="btn" target="_blank">Read more</a>
+                </div>
+                            
+                <div class="cardBox">
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam a illo fugit, perferendis minima non, fuga ex repellat rerum similique aliquam suscipit quod porro dolor ea laboriosam numquam veniam? Possimus?</p>
+                    <a href="https://www.google.com" class="btn" target="_blank">Read more</a>
+                </div>
+            </div>
+        </div>
+        <aside>
+            <h2>Sidebar</h2>
+        </aside>
+    </main>
+    <footer>
+        <p>Footer text</p>
+    </footer>
+</body>
+</html>
