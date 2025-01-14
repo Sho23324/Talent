@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+}
+nav {
+    justify-content: space-between;
+    background-color: rgba(255, 68, 0, 0.751);
+    color: white;
+    padding: 10px 15px;
+}
+.flex {
+    display: flex;
+}
+.flex-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-spacebetween p{
+    margin: 0;
+}
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.phonenumber a {
+    text-decoration: none;
+    color: white;
+}
+
+.img-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/Assignment2/img/backgoround_img.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 50px;
+}
+.img-container p {
+    font-size: 15px;
+}
+.img-text {
+    width: 50%;
+    text-align: center;
+}
+.img-container h1 , p{
+    margin-bottom: 30px;
+}
+.img-container a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgba(255, 68, 0, 0.751);
+    border-radius: 50px;
+    font-size: 15px;
+}
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.faq-section {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq-section p {
+    font-size: 15px;
+}
+.faq {
+    margin-bottom: 10px;
+}
+.faq dd {
+    padding: 10px;
+    background-color: white;
+    font-size: 15px;
+}
+.faq dt {
+    background-color: rgba(255, 68, 0, 0.751);
+    padding: 10px;
+    color: white;
+}
+.center {
+    text-align: center;
+}
+.invoice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: white;
+    padding-top: 25px;
+}
+table {
+    width:40%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table th {
+    text-align: start;
+    background-color: rgba(128, 128, 128, 0.538);
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 10px;
+}
+table tr td{
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    padding: 10px;
+}
+.gray {
+    background-color: rgba(128, 128, 128, 0.538);
+}
+.line {
+    width: 50%;
+    border-bottom: 2px solid rgb(255, 102, 0);
+    height: 12px;
+
+}
+.circle {
+    width: 25px;
+    background-color: rgb(255, 102, 0);
+    height: 20px;
+    border-radius: 50%;
+    margin: 0px 5px;
+}
+.ball {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.justify-center {
+    justify-content: center;
+}
+footer p {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 0;
+}
