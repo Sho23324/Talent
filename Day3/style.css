@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #f00;
+    --secondary-color: #00f;
+    --black: #000;
+    --white: #fff;
+    --success: #0f0;
+    --dark-green: #0a0;
+    --orange: rgb(255, 102, 0);
+    --dancing-script: "Dancing Script";
+}
+body {
+    font-family: "Roboto Condensed", serif;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 16px;
+    line-height: 1.6;
+}
+.flex {
+    display: flex;
+}
+.flex-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul {
+    display: flex;
+}
+.menu ul li {
+    list-style: none;
+}
+header {
+    background-color: var(--orange);
+    padding: 10px 20px;
+    align-items: center;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li a {
+    margin-right: 10px;
+}
+
+.dancing-script {
+    font-family: var(--dancing-script);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* display: flex;
+    justify-content: center; */
+}
+.title span {
+    color: gray;
+}
+.title {
+    position: relative;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    margin-bottom: 40px;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background-color: var(--orange);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 40px;
+}
+h3 {
+    font-size: 32px;
+}
+h4 {
+    font-family: 24px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+.card {
+    width: calc(calc(100%/3) - 20px); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img {
+    max-width: 100%;
+    vertical-align: middle;
+    transition: all ease 0.3s;
+}
+.card img:hover {
+    transform: scale(1.1);
+}
+.card a {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--orange);
+    padding: 5px 15px;
+    color: white;
+    transform: skewX(-10deg);
+}
+
+.card-img {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
