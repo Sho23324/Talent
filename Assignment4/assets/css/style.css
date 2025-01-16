@@ -11,6 +11,7 @@ body {
     --orange: #ff9933;
     --white: #fff ;
     --gray: #ddd;
+    --submit: rgba(253, 1,0, 1);
 }
 .flex {
     display: flex;
@@ -44,7 +45,7 @@ nav h1 {
 aside {
     width: 250px;
     background-color: var(--black);
-    height: 110vh;
+    height: 93vh;
     padding: 30px 25px;
     line-height: 2.5;
     position: fixed;
@@ -114,7 +115,7 @@ textarea {
 
 .form-group input[type="submit"] {
     padding: 8px 30px;
-    background-color: rgba(253, 1,0, 1);
+    background-color: var(--submit);
     color: white;
     margin-right: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
@@ -138,7 +139,11 @@ footer {
     justify-content: space-between;
 
 }
-
+.pp {
+    margin-right: 10px;
+    color: black;
+}
 .policy {
     display: flex;
+    color: black;
 }
