@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto, sans-serif;
+}
+:root {
+    --black: #212121;
+    --orange: #ff9933;
+    --white: #fff ;
+    --gray: #ddd;
+}
+.flex {
+    display: flex;
+}
+header {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
+    background-color: var(--white);
+    position: fixed;
+    z-index: 9999;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h1 {
+    color: var(--orange);
+}
+.icon {
+    width: 200px;
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.icon a {
+    color: black;
+}
+
+aside {
+    width: 250px;
+    background-color: var(--black);
+    height: 110vh;
+    padding: 30px 25px;
+    line-height: 2.5;
+    position: fixed;
+    top: 50px;
+}
+aside li {
+    list-style: none;
+}
+aside ul {
+    margin-bottom: 25px;
+}
+
+aside a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.form-container {
+    width: 100%;
+    margin-left: 250px;
+}
+.form-container h3 {
+    padding-top: 80px;
+    padding-bottom: 10px;
+
+}
+.form-section {
+    width: 98%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
+    padding: 20px;
+    margin: 10px;
+}
+.form-section form {
+    width: 100%;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+.form-group input {
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.183);
+    border-radius: 5px;
+    outline: none;
+}
+form label {
+    font-weight: 500;
+}
+textarea {
+    height: 80px;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.form-group select {
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input[type="submit"] {
+    padding: 8px 30px;
+    background-color: rgba(253, 1,0, 1);
+    color: white;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
+    cursor: pointer;
+}
+.form-group input[type="reset"] {
+    padding: 8px 30px;
+    margin-right: 10px;
+    background-color: var(--gray);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.471);
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--gray);
+    padding: 10px;
+    width: 100%;
+}
+.copy {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.policy {
+    display: flex;
+}

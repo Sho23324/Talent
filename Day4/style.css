@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    height: 110vh;
+}
+.flex {
+    display: flex;
+    gap: 24px;
+}
+
+.flex-box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.absolute {
+    position: absolute;
+    right: 20px;
+    top: 400px;
+}
+
+.static {
+    position: static;
+}
+.sticky {
+    position: sticky;
+}
+
+.fixed {
+    position: fixed;
+    top: 300px;
+    right: 400px;
+}
+
