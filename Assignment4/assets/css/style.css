@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 :root {
     --black: #212121;
@@ -34,14 +34,18 @@ nav h1 {
 }
 .icon {
     width: 200px;
-    display: flex;
     padding: 0 10px;
-    justify-content: space-between;
 }
 .icon a {
     color: black;
 }
-
+.icon ul {
+    display: flex;
+    justify-content: space-between;
+}
+.icon ul li {
+    list-style: none;
+}
 aside {
     width: 250px;
     background-color: var(--black);
