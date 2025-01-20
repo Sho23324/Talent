@@ -66,13 +66,14 @@ nav ul li a {
 }
 .cover {
     width: 100%;
-    height:180vh;
+    height:100%;
     background: var(--cover-color);
     position: absolute;
     top: 0;
 }
 .banner img {
     width: 100%;
+    vertical-align: middle;
 }
 .banner-text {
     max-width: 1017px;
