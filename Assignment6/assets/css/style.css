@@ -13,6 +13,9 @@
     --black: #3B3735;
     --archivo: "Archivo";
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-size: 18px;
     font-family: "Roboto";
@@ -260,6 +263,19 @@ nav ul li a {
     background-color: var(--footer-color);
     border-radius: 15px;
 }
+.send {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+.send i {
+    color: var(--orange);
+    padding: 10px;
+    background-color: white;
+    border-radius: ;
+    font-size: 36px;
+}
 .left {
     width: 50%;
     display: flex;
@@ -278,9 +294,10 @@ nav ul li a {
     margin-bottom: 20px;
 }
 .left input {
+    width: 500px;
     padding: 20px;
     border: none;
-    border-radius: 15px;
+    border-radius: ;
     outline: none;
 }
 .right {
@@ -296,6 +313,7 @@ nav ul li a {
 footer {
   margin-top: 150px;
   color: var(--black);
+  position: relative;
 }
 .footer-container {
     display: flex;
@@ -304,6 +322,14 @@ footer {
     padding: 100px 160px;
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
+}
+.up-arrow {
+    position: absolute;
+    left: 85%;
+    top: -35px;
+}
+.up-arrow img {
+    width: 90px;
 }
 .footer-item ul li {
     list-style: none;
