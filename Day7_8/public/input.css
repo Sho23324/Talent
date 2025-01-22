@@ -11,4 +11,5 @@
         @apply font-dancing text-5xl uppercase text-center relative after:content-[''] after:w-36 after:h-2 after:bg-red-500 after:absolute after:left-1/2 after:bottom-0 after:-translate-x-1/2 pb-5
         
     }
+    
 }
