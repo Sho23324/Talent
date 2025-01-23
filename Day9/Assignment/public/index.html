@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day9 assignment</title>
+  <link href="./assets/css/style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-white shadow-lg p-3 fixed top-0 w-full">
+        <nav class="flex justify-between w-full">
+            <div class="logo flex items-center">
+                <div class="menu-bar mr-4 hover:cursor-pointer " id="menu-bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <h1 class="font-dancing text-4xl text-orange-500">Dashboard</h1>
+            </div>
+            <ul class="flex justify-between w-40 items-center">
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <aside class=" lg:block top-16 w-72 bg-gray-950 h-full fixed " id="side-menu">
+                <ul class="p-3 text-white" id="side-item">
+                    <li class="pt-4 pb-2"><a href="#"><i class="fa-solid fa-chart-simple mr-2"></i> Home</a></li>
+                    <li class=" pb-2"><a href="#"><i class="fa-solid fa-rectangle-list mr-2"></i> Tables</a></li>
+                    <li class=" pb-2"><a href="#"><i class="fa-solid fa-rectangle-list mr-2"></i> Products</a></li>
+                    <li class=" pb-2"><a href="#"><i class="fa-solid fa-table-columns mr-2"></i> FAQ</a></li>
+                    <li class=" pb-2"><a href="#"><i class="fa-solid fa-table-columns mr-2"></i> Contact</a></li>
+                </ul>
+            </aside>
+
+           <div class="form-container lg:ml-72 mt-16 font-lato" id="main-content">
+               <h1 class="text-3xl font-bold p-5 pb-0">Form</h1><br>
+               <div class="block gap-4 pt-0 md:flex p-4">
+                   <div class="left w-full md:w-1/2">
+                       <div class="address-container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 gap-4">
+                           <div class="address-card border p-5">
+                                <i class="fa-solid fa-location-dot text-2xl text-blue-700"></i>
+                                <h2 class="mb-3 mt-3 font-bold text-blue-700">Address</h2>
+                                <p>A108 Adam Street, New York, NY 535022 5th floor</p>
+                           </div>
+                           <div class="address-card border p-5">
+                                <i class="fa-solid fa-location-dot text-2xl text-blue-700"></i>
+                                <h2 class="mb-3 mt-3 font-bold text-blue-700">Address</h2>
+                                <p>A108 Adam Street, New York, NY 535022 5th floor</p>
+                           </div>
+                           <div class="address-card border p-5">
+                                <i class="fa-solid fa-location-dot text-2xl text-blue-700"></i>
+                                <h2 class="mb-3 mt-3 font-bold text-blue-700">Address</h2>
+                                <p>A108 Adam Street, New York, NY 535022 5th floor</p>
+                           </div>
+                           <div class="address-card border p-5">
+                                <i class="fa-solid fa-location-dot text-2xl text-blue-700"></i>
+                                <h2 class="mb-3 mt-3 font-bold text-blue-700">Address</h2>
+                                <p>A108 Adam Street, New York, NY 535022 5th floor 5th floor</p>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="right w-full md:w-1/2 border shadow-md">
+                       <form action="#" class="p-3">
+                            <div class="name-mail grid grid-cols-2">
+                                <input class="mr-2 p-2 border" type="text" placeholder="Your Name">
+                                <input class="p-2 border" type="text" placeholder="Your Email"><br>
+                            </div>
+                            <div class="sub grid grid-cols-1">
+                                <input class="p-2 border" type="text" placeholder="Your Subject"><br>
+                            </div>
+                            <div class="message grid grid-cols-1">
+                                <textarea class="p-2 border" rows="4" name="message" id="msg" placeholder="Message"></textarea>
+                            </div>
+                            <div class="send-btn text-center mt-5 mb-3">
+                                <input class="bg-blue-700 text-center p-2 text-white" type="submit" value="Send Message">
+                            </div>
+                       </form>
+                   </div>
+                </div>
+                <footer class="bg-gray-300 flex justify-between p-4 mt-36" id="footer"> 
+                    <p class="">&copy;Right2024</p>
+                    <div class="privacy flex">
+                        <p class="mr-2">Privacy Policy</p>
+                        <p>Terms & Condition</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let menuBar = document.getElementById("menu-bar");
+            let sideMenu = document.getElementById('side-menu');
+            let mainContent = document.getElementById('main-content');
+            let sideItem = document.getElementById('side-item');
+            let addressBox = document.getElementById('address-box');
+            let n = 0;
+            menuBar.addEventListener('click', function() {
+                mainContent.classList.toggle('lg:ml-72');
+                mainContent.style.transition = "all 0.5s ease-in-out";
+                sideMenu.style.transition = "all 0.5s ease-in-out";
+                sideItem.style.transition = "all 4s ease-in-out";
+              if(n == 0) {
+                sideMenu.style.width = "0px";
+                sideItem.style.display = "none";
+                n++;
+              }else if (n == 1){
+         
+                sideMenu.style.width = "288px";
+                sideItem.style.display = "block";
+                n--;
+              }
+            })
+        })
+    </script>
+</body>
+</html>
