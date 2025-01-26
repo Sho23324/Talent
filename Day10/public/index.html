@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-gray-300 font-lato">
+    <header class=" flex justify-between items-center fixed w-full z-40 text-white">
+        <div class="lg:hidden menu-bar p-10 text-4xl">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="hidden lg:flex items-center p-5">
+            <div class="logo mr-3">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+            <ul class="flex gap-4">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destination</a></li>
+                <li><a href="#">Near me</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="hidden lg:block register gap-4 p-5">
+            <a class="mr-6" href="#">Sign up</a>
+            <a class="border-white border-2 p-2 px-6 rounded-3xl"  href="#">Sign in</a>
+        </div>
+    </header>
+    <div class="banner w-ful">
+        <div class="banner-img">
+            <img class="w-full h-hero lg:h-full object-cover rounded-bl-hero rounded-br-hero" src="./assets/img/background_img.jpg" alt="">
+        </div>
+        <div class="banner-text text-white text-center absolute top-1/3 left-1/2 -translate-x-1/2">
+            <h1 class="text-6xl font-bold">Find Yourself <br> Outside</h1>
+            <p class="mb-4 mt-4 text-p">Book unique camping experiences on over 300,000 campsites <br> cabins.RV parks, public parks and more.</p>
+            <a class="p-2 px-9 bg-orange-600 rounded-3xl" href="#">Discover</a>
+        </div>
+    </div>
+    <main>
+        <section>
+            <div class="card-box px-10 md:px-20 lg:px-20 xl:px-40 text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 -my-20">
+                <div class="card-item text-center bg-white px-3 py-10 rounded-xl">
+                    <div class="card-img w-20 mx-auto text-center">
+                        <img class="text-center  w-full" src="./assets/img/fire.png" alt="">
+                    </div>
+                    <h2 class="font-bold mb-2">Camping & Day Use</h2>
+                    <p>Return to your favorite spot or discover a new one that's right for you.</p>
+                </div>
+                
+                <div class="card-item text-center bg-white px-3 py-10 rounded-xl">
+                    <div class="card-img w-20 mx-auto text-center">
+                        <img class="text-center  w-full" src="./assets/img/ticket.png" alt="">
+                    </div>
+                    <h2 class="font-bold mb-2">Camping & Day Use</h2>
+                    <p>Return to your favorite spot or discover a new one that's right for you.</p>
+                </div>
+                <div class="card-item text-center bg-white px-3 py-10 rounded-xl">
+                    <div class="card-img w-20 mx-auto text-center">
+                        <img class="text-center  w-full" src="./assets/img/car.png" alt="">
+                    </div>
+                    <h2 class="font-bold mb-2">Camping & Day Use</h2>
+                    <p>Return to your favorite spot or discover a new one that's right for you.</p>
+                </div>
+                <div class="card-item text-center bg-white px-3 py-10 rounded-xl">
+                    <div class="card-img w-20 mx-auto text-center">
+                        <img class="text-center  w-full" src="./assets/img/fish.png" alt="">
+                    </div>
+                    <h2 class="font-bold mb-2">Camping & Day Use</h2>
+                    <p>Return to your favorite spot or discover a new one that's right for you.</p>
+                </div>
+            </div>
+        </section>
+        <!--explore section-->
+        <section>
+            <div class="explore text-center mt-48 mb-10">
+                <div class="explore-img mx-auto w-20">
+                    <img src="./assets/img/map.png" alt="">
+                </div>
+                <h2 class="font-bold text-3xl">Explore Destinations <br> & Activities</h2>
+            </div>
+            <div class="activity-box text-center px-10 md:px-20 xl:px-40 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4 text-p">
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full relative" src="./assets/img/png_1.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">Trickle Creek Ranch</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_2.png" alt="">
+                        <i class="fa-solid fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">Dragonfly Tiny Cabin</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_3.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">Tiny Cabin in the mountains</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_4.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">The Stuga</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_5.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">Luxury Tiny Beach Cabin</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_6.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">The Summit Cabin</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_7.png" alt="">
+                        <i class="fa-solid fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">Kindred Spirits Cabin</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_8.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">The Hermitage Cabin</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_9.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">Red Lifeguard Stand</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_10.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">The Tree House</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_11.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">Barrier island elevated tent</h2>
+                    <p class="mb-5">Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+                <div class="activity-item bg-white p-4 rounded-3xl leading-7">
+                    <div class="relative mb-11">
+                        <img class="w-full" src="./assets/img/png_12.png" alt="">
+                        <i class="fa-regular fa-heart absolute top-2 left-1/2 translate-x-20 text-orange-600 text-xl bg-white p-1 px-2 rounded-circle"></i>
+                        <p class="absolute bg-white text-orange-600 p-3 px-8 rounded-xl left-1/2 -translate-y-6 -translate-x-1/2">$36/night</p>
+                    </div>
+                    <h2 class="font-bold text-h1">Ninovan on the Shore</h2>
+                    <p>Book unique camping experiences on over 300,000 campsites.</p>
+                    <a class="p-2 px-6 rounded-hero bg-gray-200" href="#">Read More</a>
+                </div>
+            </div>
+            <div class="view-all text-center mt-10">
+                <a class="border-orange-600 border-2 text-orange-600 p-2 px-14 rounded-hero" href="#">View all</a>
+            </div>
+        </section>
+<!--tent section-->            
+        <section>
+            <div class="bg-footer flex-col-reverse items-center xl:flex-row lg:flex-row tent-section flex w-4/5 mx-auto rounded-3xl mt-20 py-5">
+                <div class="w-full tent-text lg:w-1/2 flex justify-center items-center leading-7">
+                    <div class="px-10">
+                        <h3 class="text-4xl font-bold">Let's Stay in Touch</h3>
+                        <p class="">Get travel planning ideas,helpful tips, and stories from our visitors delivered right to your inbox.</p>
+                        <div class="send-msg bg-white flex rounded-lg overflow-hidden  items-center mb-10">
+                            <input class="w-full p-2 border-none outline-none" type="text" placeholder="Email Address">
+                            <a href="#"><i class="fa-brands fa-telegram text-3xl text-orange-600 px-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full tent-img lg:w-1/2">
+                    <img class="w-1/2 mx-auto" src="./assets/img/group.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" bg-footer rounded-tl-hero rounded-tr-hero py-20 mt-28">
+      <div class="footer-section xl:flex">
+        <div class="footer-item grid-cols-1 px-20 md:pl-40 xl:w-2/3 mb-4">
+            <h2 class="font-bold mb-5">Hipcamp is everywhere you want to camp.</h2>
+            <p>Discover unique experiences on ranches, nature preserves,fams, vineyards, and public campgrounds across the U.S.Book tent camping, treehouses,cabin,yurts,primitive backcountry sites,car camping,airstreams,tiny houses,RV camping,glamping tents and more.</p>
+            <h2 class="font-bold mb-5 mt-5">Download Our App</h2>
+            <div class="download flex">
+                <img src="./assets/img/apple.png" alt="">
+                <img src="./assets/img/google-play-badge.png" alt="">
+            </div>
+        </div>
+        <div class=" grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 pl-10 lg:w-1/2 sm:pl-40 xl:pl-0 md:pl-40 lg:pl-0 lg:mx-auto lg:pr-40 gap-10" >
+            <div class="footer-item">
+                <h2 class="font-bold mb-5">Get to Know us</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Rules & Reservation Policies</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">Site Map</a></li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="font-bold mb-5">Play with Us</h2>
+                <ul>
+                    <li><a href="#">Find Trip Inspiration</a></li>
+                    <li><a href="#">Build a Trip</a></li>
+                    <li><a href="#">Buy a Pass</a></li>
+                    <li><a href="#">Enter a Lottery</a></li>   
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h2 class="font-bold mb-5">Let Us Help You</h2>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Your Reservation</a></li>
+                    <li><a href="#"></a>Contact Us</li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Submit Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+      </div>
+        <div class="copy-right text-center mt-20">
+            <p>&copy; 2022.All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

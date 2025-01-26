@@ -8,6 +8,7 @@ module.exports = {
       lg: '992px',
       xl: '1140px'
     },
+    
     extend: {
       fontFamily: {
         'dancing': 'Dancing Script',

@@ -25,7 +25,7 @@
     </header>
     <main>
         <section>
-            <aside class=" lg:block top-16 w-72 bg-gray-950 h-full fixed " id="side-menu">
+            <aside class="w-0 lg:block top-16 sm:w-72 lg:w-72 md:w-72 bg-gray-950 h-full fixed overflow-y-scroll" id="side-menu">
                 <ul class="p-3 text-white" id="side-item">
                     <li class="pt-4 pb-2"><a href="#"><i class="fa-solid fa-chart-simple mr-2"></i> Home</a></li>
                     <li class=" pb-2"><a href="#"><i class="fa-solid fa-rectangle-list mr-2"></i> Tables</a></li>
@@ -82,9 +82,11 @@
                 </div>
                 <footer class="bg-gray-300 flex justify-between p-4 mt-36" id="footer"> 
                     <p class="">&copy;Right2024</p>
-                    <div class="privacy flex">
-                        <p class="mr-2">Privacy Policy</p>
-                        <p>Terms & Condition</p>
+                    <div class="privacy">
+                        <ul class="flex gap-3">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
                     </div>
                 </footer>
             </div>
@@ -103,15 +105,15 @@
                 mainContent.style.transition = "all 0.5s ease-in-out";
                 sideMenu.style.transition = "all 0.5s ease-in-out";
                 sideItem.style.transition = "all 4s ease-in-out";
-              if(n == 0) {
-                sideMenu.style.width = "0px";
-                sideItem.style.display = "none";
-                n++;
-              }else if (n == 1){
+              if(n == 1) {
+                  sideMenu.style.width = "288px";
+                  sideItem.style.display = "block";
+                  n--;
+                }else if (n == 0){
+                  sideMenu.style.width = "0px";
+                  sideItem.style.display = "none";
+                  n++;
          
-                sideMenu.style.width = "288px";
-                sideItem.style.display = "block";
-                n--;
               }
             })
         })

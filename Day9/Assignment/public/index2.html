@@ -8,7 +8,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="bg-white shadow-lg p-3 fixed top-0 w-full">
+    <header class="bg-white shadow-lg p-3 fixed top-0 w-full z-50">
         <nav class="flex justify-between w-full">
             <div class="logo flex items-center">
                 <div class="menu-bar mr-4 hover:cursor-pointer " id="menu-bar">
@@ -25,7 +25,7 @@
     </header>
     <main>
         <section>
-            <aside class="lg:block top-16 w-72 bg-gray-950 h-full fixed" id="side-menu">
+            <aside class="lg:block top-16 w-72 bg-gray-950 h-full fixed overflow-y-scroll" id="side-menu">
                 <ul class="p-3 text-white" id="side-item">
                     <li class="pt-4 pb-2"><a href="#"><i class="fa-solid fa-chart-simple mr-2"></i> Home</a></li>
                     <li class=" pb-2"><a href="#"><i class="fa-solid fa-rectangle-list mr-2"></i> Tables</a></li>
@@ -76,9 +76,11 @@
                 </div>
                 <footer class="bg-gray-300 flex justify-between p-4 mt-20" id="footer"> 
                     <p class="">&copy;Right2024</p>
-                    <div class="privacy flex">
-                        <p class="mr-3">Privacy Policy</p>
-                        <p>Terms & Condition</p>
+                    <div class="privacy">
+                        <ul class="flex gap-3">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Condition</a></li>
+                        </ul>
                     </div>
                 </footer>
 
